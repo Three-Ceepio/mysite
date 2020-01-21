@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div>
+            <h1 id="top-lg">About Me</h1>
+            
+            <div class="circle"></div>
+            <p id="about-blurb">My name is Jacob Scott and I am a Data Science graduate student. Most of my experience is in the GIS and Python domains, but I'm growing my skillset and hope to become a Data Scientist/Engineer in the near future!</p>
+            <p>Working as a GIS Technician has made me familiar with both analysis and management of data. I have experience performing spatial analyses, automating processes with Python and SQL tools, and managing access and use of geospatial databases. I want to work with bigger and more complex data in the future, which is why I'm studying Data Science at Indiana University.</p>
+        </div>
+        <div>
+            <h1>About This Site</h1>
+            <p>I built this site using the Django Python Web Framework. I first built out a blog CMS so I would have the ability to share projects I'm working on and technology I'm using. I built out more components in order to turn it into a full-fledged personal website to host my resume and allow people to get in touch with me.</p>
+        </div>
+        <div>
+            <h1>Resume</h1>
+                <article class="card">
+                    <div id="resume">
+                        <h2 id="skills">Skills</h2>
+                        <p>Data Analysis | Programming | Automation | Database Management | Data Visualization | Written and Oral Communication</p>
+                        <h2 id="software-technologies">Software | Technologies</h2>
+                        <p>Python |  Django | Pandas | Numpy | R | SQL | HTML/CSS | Linux &amp; Unix-like Operating Systems | BASH | Adobe Creative Suite</p>
+                        <h2 id="education-certifications-training">Education | Certifications | Training</h2>
+                        <p><strong>Bachelor of Arts, Environmental and Sustainability Studies</strong> - Indiana University Bloomington, 2019</p>
+                        <p>Concentration: Energy and Natural Resources</p>
+                        <p>Minor: Geography</p>
+                        <p><strong>Certificate, GIS and Remote Sensing</strong> - Indiana University Bloomington, 2019</p>
+                        <p><strong>Graduate Certificate, Data Science</strong> - Indiana University Bloomington, Projected 2020</p>
+                        <h2 id="experience">Experience</h2>
+                        <p><strong>Utilities GIS Technician</strong>, Bloomington, IN, March 2019 – Current</p>
+                        <ul>
+                        <li>Assist GIS Analyst with data management processes including data quality control, schema establishment, version control, and user access.</li>
+                        <li>Create and manage automated tasks using Python and ArcGIS tools.</li>
+                        <li>Assist and substitute for Documentation Technicians as needed, monitoring sites for utilities locating, updating spatial data with field identification and GPS methods.</li>
+                        <li><strong>Notable Project</strong>: Created backup, user access, and version control scripts for eight campus spatial databases using Python and task scheduling, bringing redundancy to existing data.</li>
+                        </ul>
+                        <p><strong>GIS Analyst Intern</strong>,  Bloomington, IN, May 2018 – March 2019</p>
+                        <ul>
+                        <li>Update and maintain IU Bloomington campus basemap and topology using versioning edits in ArcGIS Desktop. Classify new basemap features from orthoimagery and LiDAR using LP360 and LAStools toolbox. Create and manage updates for campus web map for construction alerts, new projects, attribute updates, etc.</li>
+                        <li>Assist GIS Analyst with creation and distribution of map documents, web maps, and web mapping applications using ArcGIS Desktop, AGOL, Web-App Builder, and Adobe Illustrator. Assist Analyst in responding to map and data requests from numerous IU and external groups including IU Parking Operations, Utility Services, Office of Sustainability, and IUPD.</li>
+                        </ul>
+                        <p><strong>Program Assistant / Field Technician</strong>, Bloomington, IN, August 2017 – May 2018</p>
+                        <ul>
+                        <li>Georeference water sample site schematics to state imagery and create spatial feature for each water fixture in sampling plan.</li>
+                        <li>Use ArcMap and MS Excel to track and visualize water sample data for over 800 sample sites.</li>
+                        <li>Maintain quality of data and assure proper chain of custody on sampling web platform. </li>
+                        </ul>
+                    </div>
+                </article>
+        </div>
+
+{% endblock %}

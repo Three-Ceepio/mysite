@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div id="top-lg">
+            <h1>Posts</h1>
+        </div>
+            {% for post in posts %}
+                <div>
+                    <article class="card">
+                        <h2 id="post-title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                        <div class="content">
+                            <p id="date">{{ post.published_date }}</p>
+                            <p>{{ post.text | slice:':400' | linebreaksbr }}... </p>
+                        </div>
+                        <footer>
+                            <button class="custom-button"><a id="post-link" href="{% url 'post_detail' pk=post.pk %}">Read More</a></button>
+                        </footer>
+                    </article>
+                </div>
+
+            {% endfor %}
+{% endblock %}

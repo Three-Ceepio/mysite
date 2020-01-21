@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob's Posts</title>
+    <link rel="stylesheet" href="https://unpkg.com/picnic">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+</head>
+<body>
+    <nav class="demo">
+        <a href="/" class="brand">
+          <img class="logo" src="{% static 'img/logo.png' %}" />
+          <span>Jacob Scott</span>
+        </a>
+      
+        <!-- responsive-->
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">Menu</label>
+      
+        <div class="menu">
+          <a href="/" class="pseudo button icon-picture">About</a>
+          <a href="{% url 'post_list' %}" class="pseudo button icon-picture">Posts</a>
+          <a href="{% url 'email_page' %}" class="button icon-puzzle">Contact</a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="flex one demo">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

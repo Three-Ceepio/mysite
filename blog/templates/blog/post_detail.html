@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="page-wrap">
+        <div id="page-content">
+            <h2 id="top-sm">{{ post.title }}</h2>
+            {% if post.published_date %}
+                <div id="date">
+                    {{ post.published_date }}
+                </div>
+            {% endif %}
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    </div>
+{% endblock %}
